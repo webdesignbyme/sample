@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        function validate() {
+            var user = document.getElementById("user_name").value;
+            var pass = document.getElementById("password").value;
+            //if (username == "")
+            //   document.getElementById("error").innerHTML = "PLease enter Username and password";
+            // return false;
+            if (user == "abhi") {
+                if (pass == "1234") {
+                    document.getElementById("success").innerHTML = "Login succeful";
+                    return true;
+                } else {
+                    document.getElementById("error").innerHTML = "Invalid password";
+                    return false;
+                }
+            } else {
+                document.getElementById("error").innerHTML = "Invalid username";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+        <nav>
+                <ul>
+                    <li><a href="#" class="logo">Online Ticket Reservation</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li> <a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li> <a href="mainpage.html"><h3>Home</h3></a></li>
+                </ul>
+            </nav>
+    <div class="loginbox">
+        
+        <h1>Login</h1>
+        <form onsubmit="return validate()" action="search.php">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" id="user_name" value="">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" id="password" value="">
+            <input type="submit" name="" value="Login">
+            <p id="error"></p>
+            <p id="success"></p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Payment info</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="payment.css">
+		
+	</head>
+	<body >
+			<nav>
+					<ul>
+						<li><a href="#" class="logo">Online Ticket Reservation</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li> <a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="mainpage.html"><h3>Home</h3></a></li>
+						<li> <a href="login.html"><h3>Login</h3></a></li>
+					</ul>
+                </nav>
+				<div class="box">
+					<h1>Payment Portal</h1>
+					<form  action="payment.php" method="POST">
+						<div class="content">
+							
+					<div class="col-25">
+							<label for="">Card Type:</label>
+					</div>
+					<div class="col-75">
+							<select name="cardtype">
+									<option value="Credit card">Credit card  </option>
+									<option value="Debit card"> Debit card </option>
+									
+									</select>
+					</div>
+							
+							<div class="col-25">
+								<label for="">Bank Name:</label>
+							</div>
+							<div class="col-75">
+								<select name="Bname">
+									<option value="Canara Bank">Canara Bank   </option>
+									<option value="Axis Bank">Axis Bank  </option>
+									<option value="Bank of Baroda ">Bank of Baroda   </option>
+									<option value="HDFC Bank ">HDFC Bank   </option>
+									<option value="Karnataka Bank">Karnataka Bank </option>
+									</select>
+							</div>
+								
+							<br>
+							<div class="col-25">
+								<label for="">Card Holder Name:</label>
+							</div>
+							<div class="col-75">
+									<input type="text" id="" name="cname" placeholder="Enter the name">
+							</div>
+							
+							<br>
+							<div class="col-25">
+								<label for="">Card No:</label>
+							</div>
+							<div class="col-75">
+									<input type="number" id="" name="cno" placeholder="Enter card number">
+							</div>
+							<br>
+							<div class="col-25">
+								<label for="">CVV:</label>
+							</div>
+							<div class="col-75">
+									<input type="number" id="" name="cvv" placeholder="Enter CVV">
+							</div>
+
+							<br>
+							<div class="col-25">
+								<label for="">Exp date:</label>
+							</div>
+							<div class="col-75">
+								<input type="date"  name="Edate" >
+							</div>
+
+							<button type="submit"  class="btn">Pay Now
+    </body>
+</html>
